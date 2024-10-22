@@ -1,0 +1,112 @@
+body {
+  background: linear-gradient(135deg, #f6f5f3, #eae7dc);
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Calc {
+  background-color: #ffffff;
+  border: 1rem solid #cfd8dc;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 400px;
+}
+
+.Header {
+  color: #333333;
+  font-size: 1.9rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.Disp {
+  background-color: #d1e8e2;
+  border-radius: 0.8rem;
+  font-size: 2.5rem;
+  height: 60px;
+  margin-bottom: 1.5rem;
+  padding: 0 15px;
+  color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Buttons {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.Buttons > button {
+  background-color: #f4f1de;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  color: #2d2d2d;
+  padding: 15px;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.Buttons > button:hover {
+  background-color: #e6dfc6;
+  transform: translateY(-2px);
+}
+
+.Operators {
+  background-color: #77a6b6;
+  color: white;
+  font-weight: bold;
+}
+
+.Operators:hover {
+  background-color: #558d9c;
+}
+
+.Clear {
+  background-color: #e76f51;
+  color: white;
+  font-weight: bold;
+}
+
+.Clear:hover {
+  background-color: #d0573b;
+}
+
+.nameButton {
+  margin-top: 1rem;
+}
+
+.nameButton > button {
+  background-color: #283d3b;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.7rem;
+  padding: 15px;
+  width: 100%;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nameButton > button:hover {
+  background-color: #197278;
+  transform: translateY(-2px);
+}
